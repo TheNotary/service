@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_dependency "thor"
+  spec.add_dependency "service_installer"
   
   spec.add_development_dependency "bundler", "~> <%= config[:bundler_version] %>"
   spec.add_development_dependency "rake", "~> 10.0"
