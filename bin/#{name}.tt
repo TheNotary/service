@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'thor'
+require '<%=config[:namespaced_path]%>'
+
+class BinRunner < Thor
+
+  desc "about", "About this file"
+  def about
+     <%=config[:constant_name]%>.about
+  end
+
+
+end
+
+
+BinRunner.start
